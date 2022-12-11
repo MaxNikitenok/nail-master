@@ -1,3 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@100;400&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: Caveat;
+}
+
+.header {
+  height: 60px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts__tel {
+  margin: 0px 10px;
+}
+
+.header-contacts__messengers {
+  display: flex;
+}
+
+.header-contacts__socials {
+  display: flex;
+}
+
+.icon {
+  width: 35px;
+  margin: 7px;
+}
+
+.tel-icon {
+  width: 11px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: center / contain no-repeat url(../img/1\(1\).png);
+}
+
+.main {
+  height: 100%;
+}
+
+.price {
+  height: 900px;
+}
+
+.price__title {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  color: #404040;
+}
+
+.price__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.price__item {
+  width: 280px;
+  border-radius: 7px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.39);
+  padding: 10px;
+}
+
+.price__item img {
+  width: 260px;
+  border-radius: 5px;
 }
