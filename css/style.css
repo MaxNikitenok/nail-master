@@ -14,7 +14,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -32,6 +32,8 @@
 }
 
 .header-contacts__tel {
+  text-decoration: none;
+  color: #252525;
   margin: 0px 20px;
   font-size: 30px;
 }
