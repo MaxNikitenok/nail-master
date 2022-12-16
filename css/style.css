@@ -27,6 +27,7 @@
 
 .header-contacts {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -36,6 +37,11 @@
   color: #252525;
   margin: 0px 20px;
   font-size: 30px;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
 }
 
 .header-contacts__messengers {
@@ -69,7 +75,7 @@
   height: calc(100vh - 60px);
 }
 
-.content{
+.content {
   background: center no-repeat url(../img/works_back.png);
 }
 
@@ -138,4 +144,41 @@
 .works__item img {
   width: 260px;
   border-radius: 5px;
+}
+
+@media (max-width: 728px) {
+  .logo img {
+    width: 300px;
+  }
+
+  .header__container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-contacts {
+    height: calc(100vh - 135px);
+    align-items: initial;
+  }
+
+  .header-contacts__tel {
+    text-decoration: none;
+    color: #252525;
+    margin: 0px 20px;
+    font-size: 30px;
+  }
+
+  .header-links {
+    align-items: flex-end;
+  }
+
+  .icon {
+    width: 45px;
+    margin: 7px;
+  }
+
+  .tel-icon {
+    width: 30px;
+  }
 }
