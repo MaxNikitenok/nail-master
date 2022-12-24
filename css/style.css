@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Neucha&display=swap');
 
 * {
   box-sizing: border-box;
@@ -11,10 +11,13 @@
 
 .header {
   height: 250px;
-  background: no-repeat url(../img/header-back-large.png);
-  background-size: 100%;
-  font-family: 'Neucha', cursive;
+  font-family: 'Neucha';
   color: #fff;
+}
+
+.header-background {
+  position: absolute;
+  width: 100%;
 }
 
 .header__container {
@@ -44,7 +47,8 @@
 }
 
 .main {
-  height: calc(100vh - 250px);
+  position: relative;
+  height: 700px;
 }
 
 .main__image {
@@ -53,11 +57,151 @@
 
 .main__image img {
   position: absolute;
-  height: 800px;
-  right: 20px;
-  top: -90px;
+  height: 870px;
+  right: -150px;
+  top: -170px;
 }
 
 .main__content {
+  position: absolute;
+  top: -50px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.main__content-img img {
+  width: 248px;
+  height: 248px;
+  border-radius: 100%;
+}
+
+.main__content-head {
+  display: flex;
+  padding: 40px;
+}
+
+.main__content-title {
+  padding: 30px 0px 0px 40px;
+  font-family: 'Neucha';
+  font-size: 40px;
+  color: #252525;
+}
+
+.main__content-text {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-size: 20px;
+  line-height: 29px;
+  color: #252525;
+  padding: 0px 40px 50px 40px;
+}
+
+.price {
+  position: relative;
+  height: 1000px;
+}
+
+.price-container {
+  position: relative;
+}
+
+.price-background {
+  position: absolute;
+  top: -50px;
+  width: 1050px;
+}
+
+.price__content {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.price__content-wrapper {
+  display: flex;
+}
+
+.price__content-title {
+  padding: 30px 0px 0px 40px;
+  font-family: 'Neucha';
+  font-size: 40px;
+  color: #252525;
+}
+
+.price__content-text {
+  list-style-type: none;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-size: 20px;
+  line-height: 29px;
+  color: #252525;
+  padding: 0px 40px 50px 40px;
+}
+
+.price__content-cost {
+  list-style-type: none;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-size: 20px;
+  line-height: 29px;
+  color: #252525;
+  padding: 0px 40px 50px 40px;
+}
+
+.my-works {
+  background-color: antiquewhite;
+}
+
+.works__title {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Neucha';
+  font-size: 40px;
+  color: #252525;
+}
+
+.works__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.works__item {
+  width: calc((1440px - 20px) / 3);
+}
+
+.contacts {
+  height: 1000px;
+  background-color: rgb(152, 167, 137);
+}
+
+.contacts__title {
   
+  padding: 30px 30px 30px 300px;
+  font-family: 'Neucha';
+  font-size: 40px;
+  color: #252525;
+}
+
+.contacts__image-container {
+  position: relative;
+}
+
+.contacts__image {
+  position: absolute;
+  top: -100px;
+  right: -230px;
+  width: 1000px;
 }
