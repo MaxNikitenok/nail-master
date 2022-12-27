@@ -34,6 +34,8 @@
   display: flex;
   font-size: 40px;
   align-items: center;
+  text-decoration: none;
+  color: #fff;
   filter: drop-shadow(2px 2px 3px rgb(63, 1, 69));
 }
 
@@ -44,6 +46,11 @@
   width: 400px;
   font-size: 32px;
   filter: drop-shadow(2px 2px 3px rgb(63, 1, 69));
+}
+
+.header__nav-item {
+  text-decoration: none;
+  color: #fff;
 }
 
 .main {
@@ -174,11 +181,27 @@
   padding-bottom: 50px;
 }
 
-.works__item {
+.works__item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: calc((1440px - 20px) / 3);
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.works__item {
+  height: 100%;
+}
+
+.works__item:hover {
+  cursor: pointer;
 }
 
 .contacts {
+  margin-top: 50px;
   height: 900px;
 }
 
@@ -228,6 +251,14 @@
   color: #252525;
 }
 
+.call-button {
+  padding: 5px 25px;
+  border-radius: 10px;
+  background-color: rgb(39, 235, 192);
+  font-size: 22px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
 .contacts__sotials {
   display: flex;
   justify-content: center;
@@ -238,4 +269,28 @@
 
 .contacts__sotials-img {
   width: 100px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+}
+
+.footer__logo img{
+  height: 150px;
+}
+
+.footer__signature {
+  text-align: end;
+  width: 100%;
+  font-family: 'Neucha';
+  font-size: 20px;
+  color: #252525;
 }

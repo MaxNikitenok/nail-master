@@ -15,11 +15,11 @@
     <img class="header-background" src="./img/header-back-large.png" alt="">
     <div class="container header__container">
       <div class="header__logo"><img src="./img/kristina_nail_logo_white.png" alt="logo"></div>
-      <a class="header__tel">+375-29-332-62-32</a>
+      <a class="header__tel" href=tel:+375333326232>+375-29-332-62-32</a>
       <nav class="header__nav">
-        <a>услуги</a>
-        <a>портфолио</a>
-        <a>контакты</a>
+        <a href="#price" class="header__nav-item">услуги</a>
+        <a href="#my-works" class="header__nav-item">портфолио</a>
+        <a href="#contacts" class="header__nav-item">контакты</a>
       </nav>
     </div>
   </header>
@@ -49,7 +49,7 @@
         </div>
       </div>
     </main>
-    <div class="price">
+    <div class="price" id="price">
       <div class="container price-container">
         <div class="price__image">
           <img class="price-background" src="./img/price_back.png" alt="">
@@ -78,22 +78,27 @@
         </div>
       </div>
     </div>
-    <div class="my-works">
+    <div class="my-works" id="my-works">
       <div class="container">
         <div class="works__title">Мои работы</div>
         <div class="works__container">
-          <img class="works__item" src="./img/nails-back.jpg" alt="">
-          <img class="works__item" src="./img/nails-back.jpg" alt="">
-          <img class="works__item" src="./img/nails-back.jpg" alt="">
-          <img class="works__item" src="./img/nails-back.jpg" alt="">
-          <img class="works__item" src="./img/nails-back.jpg" alt="">
-          <img class="works__item" src="./img/nails-back.jpg" alt="">
-          <img class="works__item" src="./img/nails-back.jpg" alt="">
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_1.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_2.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_3.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_4.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_5.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_6.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_7.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_8.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_9.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_10.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_11.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_12.jpg" alt=""></div>
+          <div class="works__item-wrapper"><img class="works__item" src="./img/my-works/Screenshot_13.jpg" alt=""></div>
         </div>
       </div>
-
     </div>
-    <div class="contacts">
+    <div class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__image-container">
           <img class="contacts__image" src="./img/contacts_back.png" alt="">
@@ -106,13 +111,18 @@
               allowfullscreen="true"></iframe>
           </div>
           <a href=tel:+375333326232 class="contacts__tel">Кристина +375-33-332-62-32 МТС
-          </a>
+          <span class="call-button">Позвонить</span></a>
           <div class="contacts__sotials">
-            <a href="viber://chat?number=%2B375333326232"><img class="contacts__sotials-img" src="./img/icon/viber_new.png" alt="viber-icon"></a>
-            <a href="https://t.me/Kristinka_nik_7"><img class="contacts__sotials-img" src="./img/icon/telegram_new.png" alt="telegram-icon"></a>
-            <a href="https://www.instagram.com/kristina.nails777/"><img class="contacts__sotials-img" src="./img/icon/instagram_new.png" alt="instagram-icon"></a>
-            <a href="https://vk.com/21kristinka"><img class="contacts__sotials-img" src="./img/icon/vk_new.png" alt="vk-icon"></a>
-            <a href="https://www.tiktok.com/@user2261382163702"><img class="contacts__sotials-img" src="./img/icon/tik-tok_new.png" alt="tik-tok-icon"></a>
+            <a target="_blank" href="viber://chat?number=%2B375333326232"><img class="contacts__sotials-img"
+                src="./img/icon/viber_new.png" alt="viber-icon"></a>
+            <a target="_blank" href="https://t.me/Kristinka_nik_7"><img class="contacts__sotials-img"
+                src="./img/icon/telegram_new.png" alt="telegram-icon"></a>
+            <a target="_blank" href="https://www.instagram.com/kristina.nails777/"><img class="contacts__sotials-img"
+                src="./img/icon/instagram_new.png" alt="instagram-icon"></a>
+            <a target="_blank" href="https://vk.com/21kristinka"><img class="contacts__sotials-img"
+                src="./img/icon/vk_new.png" alt="vk-icon"></a>
+            <a target="_blank" href="https://www.tiktok.com/@user2261382163702"><img class="contacts__sotials-img"
+                src="./img/icon/tik-tok_new.png" alt="tik-tok-icon"></a>
           </div>
         </div>
 
@@ -121,7 +131,16 @@
     </div>
   </body>
 
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <img src="./img/kristina_nail_logo.png" alt="logo">
+      </div>
+      <div class="footer__signature">
+        <div>2023 Max Nikitenok</div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
