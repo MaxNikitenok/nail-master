@@ -18,7 +18,7 @@ html {
   font-family: 'Neucha';
   color: #fff;
   background-image: url(../img/header-back-large.png);
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -154,16 +154,11 @@ html {
 }
 
 .price__content-text {
-  list-style-type: none;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-size: 20px;
-  line-height: 29px;
-  color: #252525;
-  padding: 0px 40px 50px 40px;
-}
-
-.price__content-cost {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
   list-style-type: none;
   font-family: 'Montserrat';
   font-style: italic;
@@ -305,6 +300,159 @@ html {
   color: #252525;
 }
 
+@media (max-width: 800px) {
+  .header {
+    height: 200px;
+    background-position: top center;
+    background-size: 330%;
+  }
+
+  .header__container {
+    justify-content: center;
+  }
+
+  .header__logo img {
+    padding-top: 10px;
+    width: 200px;
+    filter: drop-shadow(2px 2px 3px rgb(63, 1, 69));
+  }
+
+  .header-background {
+    width: auto;
+  }
+
+  .header__tel {
+    display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 20px;
+  }
+
+  .main__image {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .main__image img {
+    position: static;
+  }
+
+  .main__content {
+    position: absolute;
+    margin: 0 auto;
+    width: calc(100vw - 40px);
+  }
+
+  .main__content-img img {
+    width: 148px;
+    height: 148px;
+  }
+
+  .main__content-head {
+    padding: 20px;
+  }
+
+  .main__content-title {
+    padding: 0px 0px 0px 20px;
+    font-size: 30px;
+  }
+
+  .main__content-text {
+    font-size: 20px;
+    padding: 0px 20px 30px 20px;
+  }
+
+  .price__image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .price-background {
+    position: static;
+    top: 0px;
+    width: 1050px;
+  }
+
+  .price__content {
+    position: absolute;
+    top: 200px;
+    margin: 0 auto;
+    width: calc(100vw - 40px);
+    right: 20px;
+    height: 100vh;
+  }
+
+  .works__container {
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .works__item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+  }
+
+  .works__item {
+    height: 100%;
+  }
+
+  .contacts__container {
+    margin: 0;
+    position: absolute;
+    width: calc(100vw - 40px);
+    right: 20px;
+    overflow: hidden;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
+
+  .contacts__map iframe {
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .contacts__map-title {
+    padding-left: 20px;
+  }
+
+  .contacts__tel {
+    font-size: 28px;
+    padding: 20px 10px;
+  }
+
+  .contacts__image {
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    width: 300px;
+  }
+
+  .contacts__sotials {
+    gap: 0px;
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .contacts__sotials-img {
+    width: calc((100vw - 40px) / 5);
+  }
+}
+
 @media (max-width: 400px) {
   .header {
     height: 200px;
@@ -364,12 +512,12 @@ html {
   .main__content-head {
     padding: 20px;
   }
-  
+
   .main__content-title {
     padding: 0px 0px 0px 20px;
     font-size: 30px;
   }
-  
+
   .main__content-text {
     font-size: 20px;
     padding: 0px 20px 30px 20px;
@@ -395,24 +543,6 @@ html {
     right: 20px;
     height: 100vh;
   }
-  
-  .price__content-text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .price__content-cost {
-    list-style-type: none;
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-size: 20px;
-    line-height: 29px;
-    color: #252525;
-    padding: 0px 40px 50px 40px;
-  }
 
   .works__container {
     padding: 20px;
@@ -426,7 +556,7 @@ html {
     width: 100%;
     height: 210px;
   }
-  
+
   .works__item {
     height: 100%;
   }
@@ -470,7 +600,7 @@ html {
     width: 100%;
     padding: 10px 0px;
   }
-  
+
   .contacts__sotials-img {
     width: calc((100vw - 40px) / 5);
   }
